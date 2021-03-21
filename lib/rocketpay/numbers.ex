@@ -5,9 +5,10 @@ defmodule Rocketpay.Numbers do
   end
 
   defp handle_file({:ok, data}) do
-    total = String.split(data, ",", trim: true)
-    |> Stream.map(fn x -> String.to_integer(x) end)
-    |> Enum.sum()
+    total =
+      String.split(data, ",", trim: true)
+      |> Stream.map(fn x -> String.to_integer(x) end)
+      |> Enum.sum()
 
     {:ok, %{result: total}}
   end

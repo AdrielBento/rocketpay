@@ -19,5 +19,4 @@ defmodule RocketpayWeb.WelcomeController do
     |> put_status(:bad_request)
     |> json(reason)
   end
-
 end
