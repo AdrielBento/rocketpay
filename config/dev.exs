@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :rocketpay, Rocketpay.Repo,
   username: "postgres",
-  password: "5ba69fbb824b4961bc0cd3afd9bb1bca",
+  password: "",
   database: "rocketpay_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
