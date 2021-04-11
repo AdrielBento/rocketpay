@@ -27,6 +27,10 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 
+config :rocketpay, :basic_auth,
+  username: "banana",
+  password: "nanica123"
+
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
